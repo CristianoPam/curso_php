@@ -6,7 +6,8 @@
 LOCAL: variável declaradas fora de duas fUnções;
 GLOBAL:  variáveis declaradas fora de funções;
 STATIC: variáveis declarada dentro da função, porém o seu valor 
-permance salvo entre chamadas de função;
+permance salvo entre chamadas de função, ela no inicio a variavel 
+é 0 e termina com 10, no final vai voltar a 0;
 PARÂMETROS DE FUNÇÃO:  variáveis passadas para uma função,
 podendo ser utilizadas ao longo da mesma;
 
