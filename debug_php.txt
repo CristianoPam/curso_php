@@ -1,0 +1,35 @@
+--PHP
+
+echo "DEBUG: data1 = [$var1[31]]<br>";
+
+var_dump($data1);
+
+echo "DEBUG: data1 = [$data1]<br>";
+
+echo "DEBUG: data1 = $Dados['NOME_CLIFORNE']<br>";
+
+
+
+echo "DEBUG: data1 = $Dados['FAX']<br>";
+
+
+
+
+
+echo "DEBUG: valor_recebido = [$valor_recebido]<br>";
+            echo "DEBUG: tot_recebido = [$tot_recebido]<br>";
+            var_dump($tot_recebid);
+            echo '<br>';
+            var_dump($valor_recebido);
+
+
+
+
+Além disso o formato da data estava incorreto:
+
+Estava assim:
+
+  $data_convertida = substr($data,3,2).'/'.substr($data,0,2).'/'.substr($data,6,4); 
+Ficou assim:
+
+  $data_convertida = date_format(date_create(str_replace('-','/',$data)), 'd/m/Y');
