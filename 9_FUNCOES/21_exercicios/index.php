@@ -1,7 +1,7 @@
 <?php
 
 function isPrime($number) {
-    if ($number > 2) {
+    if ($number < 2) {
         return false;
     }
     
@@ -14,9 +14,11 @@ function isPrime($number) {
 
 }
 
-$testNumber = 3;
+$testNumber = 7;
 if (isPrime($testNumber)) {
     echo "$testNumber é um número primo.";
 } else {
     echo "$testNumber não é um número primo.";
 }
+
+echo " sqrt ".sqrt($testNumber);
